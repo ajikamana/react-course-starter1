@@ -1,16 +1,16 @@
-*{
+* {
   box-sizing: border-box;
 }
-:root{
-  --main-red-color:#e06262;
+:root {
+  --main-red-color: #e06262;
 }
-.main-red-color{
+.main-red-color {
   color: var(--main-red-color);
 }
-html{
+html {
   font-size: 10px;
 }
-body{
+body {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -19,43 +19,79 @@ body{
   background-color: #2d2d2d;
   height: 100vh;
 }
-body, html{
-  margin:0;
+body,
+html {
+  margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.container{
+.container {
   width: 600px;
-  height: 600px;
+  height: 800px;
   background-color: #f2eecb;
   border-radius: 4px;
 
   padding: 32px;
 }
-.frame{
+.frame {
   border: 1px solid #484848;
   height: 100%;
 
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
-.header{
+.header {
   display: flex;
   align-items: flex-start;
 }
-.header-title{
+.header-title {
   flex: 1;
   text-align: center;
 
   font-size: 3.6rem;
-  font-family: 'homemade apple',sans-serif;
+  font-family: "Homemade Apple", sans-serif;
   text-transform: lowercase;
 }
-.header-btn{
-  font-size:1.8rem;
-  font-family: 'bungee',sans-serif;
+.header-btn {
+  font-size: 1.8rem;
+  font-family: "Bungee", sans-serif;
 
-  padding: 24px;
+  padding: 16px;
+  cursor: pointer;
+
+  background: unset;
+  border: unset;
+  outline: unset;
+}
+.add {
+  padding: 16px;
+}
+.add-form {
+  display: flex;
+  align-items: flex-start;
+}
+.add-input {
+  background: unset;
+  border: unset;
+  padding: 0 64px;
+
+  flex: 1;
+
+  border-bottom: 1px solid var(--main-red-color);
+  outline: unset;
+
+  font-family: "Homemade Apple", sans-serif;
+  font-size: 16px;
+  text-transform: lowercase;
+}
+.add-btn {
+  font-size: 1.8rem;
+  font-family: "Bungee", sans-serif;
+
+  padding: 7px;
+  padding-right: unset;
+  cursor: pointer;
 
   background: unset;
   border: unset;
